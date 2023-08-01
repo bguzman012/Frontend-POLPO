@@ -27,5 +27,7 @@
   "boilerplate.containers.HomePage.tryme.message": "Zeige die Github Repositories von",
   "boilerplate.containers.LocaleToggle.de": "",
   "boilerplate.containers.LocaleToggle.en": "",
-  "boilerplate.containers.NotFoundPage.header": "Seite nicht gefunden."
+  "boilerplate.containers.NotFoundPage.header": "Seite nicht gefunden.",
+  "boilerplate.containers.ChuckNorrisPage.titulo.chiste": "Chiste Aleatorio de Chuck Norris",
+  "boilerplate.containers.ChuckNorrisPage.button.joke": "Obtener Nueva Broma"
 }

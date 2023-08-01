@@ -6,6 +6,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import createSagaMiddleware from 'redux-saga';
 import createReducer from './reducers';
+import chuckNorrisSaga from './containers/ChuckNorrisPage/saga';
+
 
 export default function configureStore(initialState = {}, history) {
   let composeEnhancers = compose;
@@ -54,6 +56,9 @@ export default function configureStore(initialState = {}, history) {
       store.replaceReducer(createReducer(store.injectedReducers));
     });
   }
+
+  // Agrego el chuckNorrisSaga
+  sagaMiddleware.run(chuckNorrisSaga);
 
   return store;
 }
